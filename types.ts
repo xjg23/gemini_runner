@@ -3,6 +3,13 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 
+import { ThreeElements } from '@react-three/fiber';
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeElements {}
+  }
+}
 
 export enum GameStatus {
   MENU = 'MENU',
